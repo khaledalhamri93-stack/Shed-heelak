@@ -19,8 +19,9 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="title" dir="rtl"><div class="tl">
+<div id="title" dir="rtl"><button class="langbtn" data-setlang aria-label="Language / اللغة">English</button><div class="tl">
   <div class="tlogo"><div class="logo">مملكة الإنجاز</div><div class="tsub">مغامرات الأبطال</div></div>
+  <div class="tquote" id="tQuote"><canvas data-icon="star" width="10" height="10"></canvas><span>أنجز مهامك اليومية… تُبنى مملكتك</span></div>
   <div class="tscene"><canvas id="titleCv" width="160" height="300"></canvas></div>
   <div class="tbottom"><button class="btn gold" id="startBtn">▶ ابدأ اللعب</button>
   <div class="tfeat"><span><canvas data-icon="list" width="10" height="10"></canvas>مهام يومية</span><span><canvas data-icon="map" width="10" height="10"></canvas>١٠٠ جزيرة</span><span><canvas data-icon="house" width="10" height="10"></canvas>٥ ممالك</span></div></div>
@@ -41,7 +42,7 @@
     <div class="brand">مملكة الإنجاز</div>
     <div class="chip" title="نقاط الإنجاز"><canvas data-icon="star" width="10" height="10"></canvas><span class="num" id="tPts">0</span></div><button class="chip tchip" data-timeshop title="وقت اللعب المتبقي"><canvas data-icon="clock" width="10" height="10"></canvas><span class="num" id="tTimeV">0:00</span></button>
     <div class="chip" title="العملات"><canvas data-icon="coin" width="10" height="10"></canvas><span class="num" id="tGold">0</span></div><div class="chip" title="الجواهر"><canvas data-icon="gem" width="10" height="10"></canvas><span class="num" id="tGems">0</span></div>
-    <button class="iconbtn" id="sndBtn" aria-label="الصوت"><canvas id="sndIc" width="10" height="10"></canvas></button>
+    <button class="iconbtn langmini" data-setlang aria-label="Language / اللغة">EN</button><button class="iconbtn" id="sndBtn" aria-label="الصوت"><canvas id="sndIc" width="10" height="10"></canvas></button>
     <button class="iconbtn" id="parentBtn" aria-label="لوحة ولي الأمر"><canvas data-icon="lock" width="10" height="10"></canvas></button>
   </header>
   <main id="view"></main>
@@ -63,7 +64,7 @@
       <div class="gpanel"><canvas data-icon="coin" width="10" height="10"></canvas><span class="num" id="gCoins">0</span></div><div class="gpanel"><canvas data-icon="log" width="10" height="10"></canvas><span class="num" id="gWood">0</span></div><div class="gpanel"><canvas data-icon="people" width="10" height="10"></canvas><span class="num" id="gLoy">80</span></div><button class="gpanel gmap" id="gPause" aria-label="استراحة"><canvas data-icon="pause" width="10" height="10"></canvas></button><button class="gpanel gmap" id="gMap" aria-label="الخريطة"><canvas data-icon="map" width="10" height="10"></canvas></button>
       <button class="gpanel gx ghome" id="gClose" aria-label="العودة إلى القائمة الرئيسية"><canvas data-icon="house" width="10" height="10"></canvas>القائمة</button>
     </div>
-    <div id="gBanner" hidden></div><div id="gTut" hidden></div><div id="gErr" hidden style="position:absolute;left:8px;bottom:90px;right:8px;background:#e8464f;color:#fff;font-size:12px;padding:6px;border-radius:6px;direction:ltr"></div>
+    <div id="gBanner" hidden></div><div id="pmenu" hidden></div><div id="gDay"></div><div id="gSide"></div><div id="gTut" hidden></div><div id="gErr" hidden style="position:absolute;left:8px;bottom:90px;right:8px;background:#e8464f;color:#fff;font-size:12px;padding:6px;border-radius:6px;direction:ltr"></div>
     <div class="gctl" dir="ltr"><div class="pads"><button class="pad" id="gL" aria-label="يسار">◀</button><button class="pad" id="gR" aria-label="يمين">▶</button></div><div class="pads"><button class="pad mnt" id="gM" aria-label="انزل أو اركب"><canvas data-icon="walk" width="10" height="10"></canvas></button><button class="pad atk" id="gA" aria-label="هجوم"><canvas data-icon="sword" width="10" height="10"></canvas></button><button class="pad jmp" id="gJump" aria-label="ادفع عملة"><canvas data-icon="coin" width="10" height="10"></canvas></button></div></div>
   </div></div>
   <div class="ghint" id="gHint"></div>
@@ -72,6 +73,7 @@
 <div id="overlay" class="overlay" hidden></div>
 <div id="rotate" dir="rtl"><div class="ph"></div><h2>أدر جهازك بالعرض</h2><p>مملكة الإنجاز مصمَّمة للعب بالعرض حتى ترى العالم كاملًا والأزرار كبيرة.</p><p style="font-size:13px;color:#b9b2da">على الآيفون: أوقف «قفل الاتجاه» من مركز التحكم ثم أدر الجهاز. ولملء الشاشة: زر المشاركة ← «إضافة إلى الشاشة الرئيسية».</p><button class="btn ghost" id="portOk">متابعة بالطول</button></div>
 <div id="toast"></div>
+<div id="loader" dir="rtl"><div class="ld-in"><div class="ld-logo">مملكة الإنجاز</div><div class="ld-frame"><canvas id="ldCv"></canvas></div><div class="ld-bar"><i id="ldBar"></i></div><div class="ld-t"><span>جارٍ تحميل اللعبة…</span><b id="ldPct" class="num">0%</b></div></div></div>
 
 <script src="game.js"></script>
 </body>
