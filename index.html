@@ -6,13 +6,13 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="مملكة الإنجاز">
+<meta name="apple-mobile-web-app-title" content="Kingdom of Veil">
 <meta name="theme-color" content="#140e28">
-<meta name="description" content="مملكة الإنجاز: مغامرات الأبطال — لعبة بناء ممالك بالبيكسل آرت تربط المهام اليومية بوقت اللعب.">
+<meta name="description" content="Kingdom of Veil: مغامرات الأبطال — لعبة بناء ممالك بالبيكسل آرت تربط المهام اليومية بوقت اللعب.">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="assets/icon-192.png">
 <link rel="apple-touch-icon" href="assets/icon-192.png">
-<title>مملكة الإنجاز</title>
+<title>Kingdom of Veil</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Tajawal:wght@500;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
 </head>
 <body>
 <div id="title" dir="rtl"><button class="langbtn" data-setlang aria-label="Language / اللغة">English</button><div class="tl">
-  <div class="tlogo"><div class="logo">مملكة الإنجاز</div><div class="tsub">مغامرات الأبطال</div></div>
+  <div class="tlogo"><div class="logo">Kingdom of Veil</div><div class="tsub">مغامرات الأبطال</div></div>
   <div class="tquote" id="tQuote"><canvas data-icon="star" width="10" height="10"></canvas><span>أنجز مهامك اليومية… تُبنى مملكتك</span></div>
   <div class="tscene"><canvas id="titleCv" width="160" height="300"></canvas></div>
   <div class="tbottom"><button class="btn gold" id="startBtn">▶ ابدأ اللعب</button>
@@ -40,7 +40,7 @@
 
 <div id="app" dir="rtl">
   <header class="topbar">
-    <div class="brand">مملكة الإنجاز</div>
+    <div class="brand">Kingdom of Veil</div>
     <div class="chip" title="نقاط الإنجاز"><canvas data-icon="star" width="10" height="10"></canvas><span class="num" id="tPts">0</span></div><button class="chip tchip" data-timeshop title="وقت اللعب المتبقي"><canvas data-icon="clock" width="10" height="10"></canvas><span class="num" id="tTimeV">0:00</span></button>
     <div class="chip" title="العملات"><canvas data-icon="coin" width="10" height="10"></canvas><span class="num" id="tGold">0</span></div><div class="chip" title="الجواهر"><canvas data-icon="gem" width="10" height="10"></canvas><span class="num" id="tGems">0</span></div>
     <button class="iconbtn langmini" data-setlang aria-label="Language / اللغة">EN</button><button class="iconbtn" id="sndBtn" aria-label="الصوت"><canvas id="sndIc" width="10" height="10"></canvas></button>
@@ -72,9 +72,9 @@
 </div>
 
 <div id="overlay" class="overlay" hidden></div>
-<div id="rotate" dir="rtl"><div class="ph"></div><h2>أدر جهازك بالعرض</h2><p>مملكة الإنجاز مصمَّمة للعب بالعرض حتى ترى العالم كاملًا والأزرار كبيرة.</p><p style="font-size:13px;color:#b9b2da">على الآيفون: أوقف «قفل الاتجاه» من مركز التحكم ثم أدر الجهاز. ولملء الشاشة: زر المشاركة ← «إضافة إلى الشاشة الرئيسية».</p><button class="btn ghost" id="portOk">متابعة بالطول</button></div>
+<div id="rotate" dir="rtl"><div class="ph"></div><h2>أدر جهازك بالعرض</h2><p>Kingdom of Veil مصمَّمة للعب بالعرض حتى ترى العالم كاملًا والأزرار كبيرة.</p><p style="font-size:13px;color:#b9b2da">على الآيفون: أوقف «قفل الاتجاه» من مركز التحكم ثم أدر الجهاز. ولملء الشاشة: زر المشاركة ← «إضافة إلى الشاشة الرئيسية».</p><button class="btn ghost" id="portOk">متابعة بالطول</button></div>
 <div id="toast"></div>
-<div id="loader" dir="rtl"><div class="ld-in"><div class="ld-logo">مملكة الإنجاز</div><div class="ld-frame"><canvas id="ldCv"></canvas></div><div class="ld-bar"><i id="ldBar"></i></div><div class="ld-t"><span>جارٍ تحميل اللعبة…</span><b id="ldPct" class="num">0%</b></div></div></div>
+<div id="loader" dir="rtl"><div class="ld-in"><div class="ld-logo">Kingdom of Veil</div><div class="ld-frame"><canvas id="ldCv"></canvas></div><div class="ld-bar"><i id="ldBar"></i></div><div class="ld-t"><span>جارٍ تحميل اللعبة…</span><b id="ldPct" class="num">0%</b></div></div></div>
 
 <script src="game.js"></script>
 </body>
